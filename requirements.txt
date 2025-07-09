@@ -1,0 +1,5 @@
+python-dotenv==1.0.*
+requests==2.*
+feedparser==6.*
+notion-client==2.*
+openai==1.*

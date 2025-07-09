@@ -1,0 +1,17 @@
+https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml
+https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=entertainment
+https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=media
+
+https://campus.sg/category/entertainment/feed
+
+https://vulcanpost.com/feed
+https://www.rias.org.sg/music-news/feed
+
+https://www.straitstimes.com/RSS-Feeds
+
+https://malaymail.com/feed/rss/malaysia
+https://themalaysianinsight.com/feed
+
+
+
+https://dividendmagic.com.my/feed
