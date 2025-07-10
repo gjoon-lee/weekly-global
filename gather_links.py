@@ -4,7 +4,7 @@ gather_links.py
 Combine RSS + NewsAPI, dedup on URL, print count & titles.
 """
 
-import rss_fetcher, newsapi_fetcher, pplx_fetcher, judge, summarise, time, notion_push
+import rss_fetcher, newsapi_fetcher, pplx_fetcher, deepsearch_fetcher, judge, summarise, time, notion_push
 
 # ---- Dedup helper -------------------------------------
 def dedup(items: list[dict]) -> list[dict]:
@@ -29,7 +29,11 @@ def main():
     pplx_links = pplx_fetcher.fetch_pplx()
     print(f"  → {len(pplx_links)} items")
 
-    all_links   = dedup(rss_links + news_links + pplx_links)
+    print("🔬  Fetching DeepResearch …")
+    dr_links = deepsearch_fetcher.fetch_deepresearch()
+    print(f"   ↳ {len(dr_links):3d} items")
+
+    all_links   = dedup(rss_links + news_links + pplx_links+dr_links)
     print(f"\n✅ Total unique links: {len(all_links)}\n")
 
     print("\n🤔 Running GPT relevance judge ...")

@@ -4,7 +4,6 @@ rss_fetcher.py  –  returns list[dict] of SG-content RSS items
 * Reads feed URLs from feeds.txt
 * Keeps items published in the last 7 days
 * Filters by KEYWORDS in the title
-* Designed to be imported (fetch_rss()) or run standalone
 """
 
 from datetime import datetime, timedelta, timezone
